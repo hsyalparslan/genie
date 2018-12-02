@@ -5,9 +5,9 @@ from django.contrib.sessions.models import Session
 
 
 class Activity(models.Model):
-	g_whatever = models.CharField(max_length=20, default="DEFAULT")
 	g_name = models.CharField(max_length=20, default="DEFAULT")
 	g_choice = models.CharField(max_length=20, default="DEFAULT")
+	honeypot = models.CharField(max_length=20, default="DEFAULT")
 	def publish(self):
 		self.save
 

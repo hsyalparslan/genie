@@ -1,1 +1,0 @@
-from fobi.contrib.plugins.form_handlers.db_store import models

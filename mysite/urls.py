@@ -20,7 +20,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
     path('', include('genie.urls')),
-    path('fobi/', include('fobi.urls.view')),
-    path('fobi/', include('fobi.urls.edit')),
-    path('fobi/plugins/form-handlers/db-store/', include('fobi.contrib.plugins.form_handlers.db_store.urls')),
 ]
