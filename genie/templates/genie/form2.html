@@ -1,0 +1,8 @@
+<p>Remember that you’re running a business and you have several rival genies, so you must explain why you chose to grant that particular wish and not the others or risk losing your customers for being an unjust little genie.</p>
+<form method="POST" class="post-form">
+	{% csrf_token %}
+	{{ wizard.management_form }}
+	
+	{{ form.as_p }}
+	<button type="submit">I promise I will choose wisely and beat my competitors.</button>
+</form>

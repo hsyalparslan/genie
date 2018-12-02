@@ -1,0 +1,12 @@
+<p>After you choose your wish below and explain why you chose that one, your customers will submit reviews on whether they agree with your decision. So, go ahead and see if you have what it takes to be a genie.</p>
+<ul>
+	<li>There are happening so many bad things in the world like robbery, seizure, rape, murder,etc. <strong>I wish these people who did these bad things died before doing it.</strong></li>
+	<li><strong>Alex wishes the gin would be his only friend in this world</strong> so that it will accept his all the wishes that he need.</li>
+	<li><strong>I wish I had one million dollars</strong> so that I could buy a very big house which has a pool and a big garden. Also, I could buy a Ferrari. Thus I live in a welfare.</li>
+</ul>
+<form method="POST" class="post-form">
+	{% csrf_token %}
+	{{ wizard.management_form }}
+	{{ form.as_p }}
+	<button type="submit">Save</button>
+</form>
