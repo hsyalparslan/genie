@@ -1,14 +1,19 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
 <h1>Well done. Your submission was noted.</h1>
+<h3>The wishes of the customers were:</h3>
+<ul>
+	{% for more_shit in wishes %}
+	<li>{{ more_shit.c_name }}: {{ more_shit.c_wish }}</li>
+	{% endfor %}
+</ul>
 {% for shit in activities %}
 <div>
-<h3>The wishes of your customers were:</h3>
-<ul>
-	<li>There are happening so many bad things in the world like robbery, seizure, rape, murder,etc. <strong>I wish these people who did these bad things died before doing it.</strong></li>
-	<li><strong>Alex wishes the gin would be his only friend in this world</strong> so that it will accept his all the wishes that he need.</li>
-	<li><strong>I wish I had one million dollars</strong> so that I could buy a very big house which has a pool and a big garden. Also, I could buy a Ferrari. Thus I live in a welfare.</li>
-</ul>
-	{{ shit.g_name.help_text }}
+
 <h3>{{ shit.g_name}}'s decision:</h3>
+
+	<p> {{shit.wishes}}</p>
 	<p>g_choice: {{ shit.g_choice }}</p>
 <h3>Customers' comments:</h3>
 	<p>Customer 1: blah</p>

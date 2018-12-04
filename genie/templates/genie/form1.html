@@ -1,10 +1,157 @@
-<h1>Task 2:</h1>
-<p>In your previous task, you learned about Aladdin, genie in the bottle. What if you were Aladdin, but with a twist:</p>
-<p>You still have to earn money to meet your needs, so you’ve decided to monetize your wish-granting abilities. But with this greedy decision came a curse upon you from the magical powers-that-be. You can only grant the wishes of one people out of three. So, you will get three wishes from three different people, but you need to decide which one to grant. </p>
-<h4>First, give yourself a business-name: </h4>
-<form method="POST" class="post-form">
-	{% csrf_token %}
-	{{ wizard.management_form }}
-	{{ form.as_p }}
-	<button type="submit">Save</button>
-</form>
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+	<!-- CSS -->
+    	<!--  GOOGLE FONT -->		
+	    <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,300%7COpen+Sans:400,300,700" rel="stylesheet" type="text/css">
+	    
+	    <!--  BOOTSTRAP -->
+			<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
+		
+	    <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->		
+			<link rel="stylesheet" href="{% static 'css/icons-fonts.css' %}" >	
+		
+	    <!--  CSS THEME -->		
+			<link rel="stylesheet" href="{% static 'css/style.css' %}" >
+		
+	    <!-- ANIMATE -->	
+			<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+			
+	    <!-- IE Warning CSS -->
+			<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
+			<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8-fix.css" ><![endif]-->
+	    
+	    <!-- Magnific popup, Owl Carousel Assets in style.css -->		
+		
+	<!-- CSS end -->
+	</head>
+	<body>
+		<!-- LOADER -->	
+		<div id="loader-overflow">
+      		<div id="loader3" class="loader-cont">Please enable JS</div>
+    	</div>	
+
+		<div id="wrap" class="boxed ">
+			<div class="grey-bg"> <!-- Grey BG  -->	
+
+       
+        <!-- PAGE TITLE LARGE 2 GRAY -->
+        <div class="page-title-cont page-title-large2-cont bg-gray">
+          <div class="relative container align-left">
+            <div class="row">
+              
+              <div class="col-md-8">
+                <h1 class="page-title2">Task 2</h1>
+              </div>
+              
+      
+              
+            </div>
+          </div>
+        </div>
+        
+        <div class="page-section p-60-cont">
+        <div class="container">
+        <div class="row">
+
+      		<div class="col-md-12">
+        	<p>In your previous task, you learned about Aladdin, genie in the bottle. What if you were Aladdin, but with a twist:</p>
+			<p>You still have to earn money to meet your needs, so you’ve decided to monetize your wish-granting abilities. But with this greedy decision came a curse upon you from the magical powers-that-be. You can only grant the wishes of one people out of three. So, you will get three wishes from three different people, but you need to decide which one to grant. </p>
+			</div>
+       	</div>
+  		</div>
+  		</div>
+        <!-- CONTACT INFO & FORM SECTION 1 -->
+        <div id="contact-link" class="page-section">
+          <div class="container">
+
+            <div class="row">
+            
+              <!-- CONTACT INFO -->
+              <div class="col-md-4 mb-30">
+                <h4 class="mt-0">First, give yourself a business name:</h4>
+              </div>
+
+              <!-- CONTACT FORM -->
+              <div class="col-md-8">
+                <div class="relative">
+                  <form method="POST">
+                    {% load crispy_forms_tags %}
+
+
+
+                    <div class="row">
+                    
+                      <div class="col-md-12">
+                        <div class="row">
+                    
+						{% csrf_token %}
+						{{ wizard.management_form }}
+						{{ form|crispy }}
+                        
+                        </div>
+                      </div>
+                    
+                      <div class="col-md-12">
+                        
+                        <div class="text-right text-xxs-center">
+                          <input type="submit" value="NEXT" class="button medium rounded gray font-open-sans mt-40" data-loading-text="Loading...">
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+
+					</form>
+                  <div class="alert alert-success hidden animated pulse" id="contactSuccess">
+                    Thanks, your message has been sent to us.
+                  </div>
+                
+                  <div class="alert alert-danger hidden animated shake" id="contactError">
+                    <strong>Error!</strong> There was an error sending your message.
+                  </div>
+                </div>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+
+
+
+			</div><!-- End BG -->	
+		</div><!-- End wrap -->	
+			
+<!-- JS begin -->
+
+		<!-- jQuery  -->
+		<script  src="{% static 'js/jquery.min.js' %}"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>	
+
+		<!-- MAGNIFIC POPUP -->
+		<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>    
+    
+    <!-- PORTFOLIO SCRIPTS -->
+    <script  src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    
+    <!-- APPEAR -->    
+    <script  src="{% static 'js/jquery.appear.js' %}"></script>
+    
+
+    <!--[if lt IE 10]><script  src="js/jquery.placeholder.js"></script><![endif]--> 
+    
+    <!-- FORMS VALIDATION	-->
+		<script src="{% static 'js/jquery.validate.min.js' %}"></script>
+		<script src="{% static 'js/contact-form-validation.min.js' %}"></script>
+    
+    <!-- MAIN SCRIPT -->
+		<script src="{% static 'js/main.js' %}"></script>
+
+<!-- JS end -->	
+	
+
+	</body>
+</html>

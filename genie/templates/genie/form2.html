@@ -1,8 +1,151 @@
-<p>Remember that you’re running a business and you have several rival genies, so you must explain why you chose to grant that particular wish and not the others or risk losing your customers for being an unjust little genie.</p>
-<form method="POST" class="post-form">
-	{% csrf_token %}
-	{{ wizard.management_form }}
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<head>
+	<!-- CSS -->
+    	<!--  GOOGLE FONT -->		
+	    <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,300%7COpen+Sans:400,300,700" rel="stylesheet" type="text/css">
+	    
+	    <!--  BOOTSTRAP -->
+			<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
+		
+	    <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->		
+			<link rel="stylesheet" href="{% static 'css/icons-fonts.css' %}" >	
+		
+	    <!--  CSS THEME -->		
+			<link rel="stylesheet" href="{% static 'css/style.css' %}" >
+		
+	    <!-- ANIMATE -->	
+			<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+			
+	    <!-- IE Warning CSS -->
+			<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
+			<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8-fix.css" ><![endif]-->
+	    
+	    <!-- Magnific popup, Owl Carousel Assets in style.css -->		
+		
+	<!-- CSS end -->
+	</head>
+	<body>
+		<!-- LOADER -->	
+		<div id="loader-overflow">
+      		<div id="loader3" class="loader-cont">Please enable JS</div>
+    	</div>	
+
+		<div id="wrap" class="boxed ">
+			<div class="grey-bg"> <!-- Grey BG  -->	
+
+       
+        <!-- PAGE TITLE LARGE 2 GRAY -->
+        <div class="page-title-cont page-title-large2-cont bg-gray">
+          <div class="relative container align-left">
+            <div class="row">
+              
+              <div class="col-md-8">
+                <h1 class="page-title2">Task 2</h1>
+              </div>
+              
+      
+              
+            </div>
+          </div>
+        </div>
+        
+        <div class="page-section pt-60-b-0-cont">
+        <div class="container">
+        <div class="row">
+
+      		<div class="col-md-12">
+
+                	<p>Remember that you’re running a business and you have several rival genies, so you must explain why you chose to grant that particular wish and not the others or risk losing your customers for being an unjust genie.</p>
+                	<h1>WARNING: WAIT FOR YOUR CUSTOMERS TO MAKE THEIR WISHES BEFORE YOU CONTINUE</h1>
+			</div>
+       	</div>
+  		</div>
+  		</div>
+        <!-- CONTACT INFO & FORM SECTION 1 -->
+        <div id="contact-link" class="page-section">
+          <div class="container">
+
+            <div class="row">
+            
+
+              <!-- CONTACT FORM -->
+              <div class="col-md-12">
+                <div class="relative">
+                	<form method="POST">
+                    {% load crispy_forms_tags %}
+                    <div class="row">
+                    
+                      <div class="col-md-12">
+                        <div class="row">
+                    
+						{% csrf_token %}
+						{{ wizard.management_form }}
+						{{ form|crispy }}
+                        
+                        </div>
+                      </div>
+                    
+                      <div class="col-md-12">
+                        
+                        <div class="text-left text-xxs-center">
+                          <input type="submit" value="I promise I will choose wisely and beat my competitors." class="button medium rounded gray font-open-sans mt-40" data-loading-text="Loading...">
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+
+					</form>
+                  <div class="alert alert-success hidden animated pulse" id="contactSuccess">
+                    Thanks, your message has been sent to us.
+                  </div>
+                
+                  <div class="alert alert-danger hidden animated shake" id="contactError">
+                    <strong>Error!</strong> There was an error sending your message.
+                  </div>
+                </div>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+
+
+
+			</div><!-- End BG -->	
+		</div><!-- End wrap -->	
+			
+<!-- JS begin -->
+
+		<!-- jQuery  -->
+		<script  src="{% static 'js/jquery.min.js' %}"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>	
+
+		<!-- MAGNIFIC POPUP -->
+		<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>    
+    
+    <!-- PORTFOLIO SCRIPTS -->
+    <script  src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    
+    <!-- APPEAR -->    
+    <script  src="{% static 'js/jquery.appear.js' %}"></script>
+    
+
+    <!--[if lt IE 10]><script  src="js/jquery.placeholder.js"></script><![endif]--> 
+    
+    <!-- FORMS VALIDATION	-->
+		<script src="{% static 'js/jquery.validate.min.js' %}"></script>
+		<script src="{% static 'js/contact-form-validation.min.js' %}"></script>
+    
+    <!-- MAIN SCRIPT -->
+		<script src="{% static 'js/main.js' %}"></script>
+
+<!-- JS end -->	
 	
-	{{ form.as_p }}
-	<button type="submit">I promise I will choose wisely and beat my competitors.</button>
-</form>
+
+	</body>
+</html>

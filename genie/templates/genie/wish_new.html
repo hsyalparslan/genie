@@ -1,0 +1,11 @@
+<ul>
+	{% for more_shit in wishes %}
+	<li>{{ more_shit.c_name }}: {{ more_shit.c_wish }}</li>
+	{% endfor %}
+</ul>
+
+<form method="POST" class="post-form">
+	{% csrf_token %}
+	{{ form.as_p }}
+	<button type="submit">Save</button>
+</form>
