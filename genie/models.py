@@ -5,9 +5,9 @@ from django.contrib.sessions.models import Session
 
 
 class TaskTwoGenie(models.Model):
-	g_name = models.CharField(max_length=20, default="DEFAULT")
-	g_choice = models.CharField(max_length=20, default="DEFAULT")
-	wishes = models.CharField(max_length=20, default="DEFAULT")
+	g_name = models.CharField(max_length=100, default="DEFAULT")
+	g_choice = models.CharField(max_length=10000, default="DEFAULT")
+	wishes = models.CharField(max_length=1000, default="DEFAULT")
 	honeypot = models.CharField(max_length=20, default="DEFAULT")
 	def publish(self):
 		self.save
@@ -18,7 +18,7 @@ class TaskTwoGenie(models.Model):
 
 class TaskTwoCustomer(models.Model):
 	c_name = models.CharField(max_length=50)
-	c_wish = models.CharField(max_length=50)
+	c_wish = models.CharField(max_length=1000)
 
 	def __str__(self):
 		return self.c_name
