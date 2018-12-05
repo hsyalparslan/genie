@@ -1,2 +1,2 @@
 # genie
-Digital Language Teaching Materials Project
+Online Language Teaching Materials Project
