@@ -9,4 +9,5 @@ urlpatterns = [
 	path('activity/new/', GenieWizard.as_view(FORMS), name='activity_new'),
 	path('activity/list/', views.activity_list, name='activity_list'),
 	path('wish/new/', views.wish_new, name='wish_new'),
+	path('', views.index, name='index'),
 ]

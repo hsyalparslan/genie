@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>{% block title %}{% endblock title %} | you-wish.co LMS</title>
+		<meta charset="utf-8">
+		<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+		<meta name="robots" content="index, follow" > 
+		<meta name="keywords" content="LMS, ELT" > 
+		<meta name="description" content="LMS PROJECT" > 
+		<meta name="author" content="Alp Arslan">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    	<meta name="theme-color" content="#2a2b2f">
+    
+		<!-- FAVICONS -->
+    	<link rel="shortcut icon" href="images/favicon/favicon.png">
+    	<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+    	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+    	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
+    	<link rel="icon" sizes="192x192" href="images/favicon/icon-192x192.png">
+
+		<!-- CSS -->
+    		<!--  GOOGLE FONT -->		
+	   		 <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,300%7COpen+Sans:400,300,700" rel="stylesheet" type="text/css">
+	    
+	    	<!--  BOOTSTRAP -->
+			<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
+		
+	   		 <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->		
+			<link rel="stylesheet" href="{% static 'css/icons-fonts.css' %}" >	
+		
+	    	<!--  CSS THEME -->		
+			<link rel="stylesheet" href="{% static 'css/style.css' %}" >
+		
+	    	<!-- ANIMATE -->	
+			<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+			
+	    	<!-- IE Warning CSS -->
+			<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
+			<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8-fix.css" ><![endif]-->
+	    
+	    	<!-- Magnific popup, Owl Carousel Assets in style.css -->		
+		
+		<!-- CSS end -->
+	</head>
+	<body>		
+		<!-- LOADER -->	
+		<div id="loader-overflow">
+      		<div id="loader3" class="loader-cont">Please enable JS</div>
+    	</div>	
+
+		<div id="wrap" class="boxed ">
+			<div class="grey-bg"> <!-- Grey BG  -->	
+
+                       <!-- HEADER 1 FONT WHITE TRANSPARENT -->
+        <div class="header-black-bg"></div> <!-- NEED FOR TRANSPARENT HEADER ON MOBILE -->
+        <!-- HEADER 3 MIN SIDE MENU 2 FONT BLACK TRANSPARENT -->
+        <header id="nav-stick" class="header header-1 header-side-menu header-black affix-on-mobile">
+          <div class="header-wrapper">
+            <div class="container-m-30 clearfix">
+              <div class="logo-row">
+              
+              <!-- LOGO --> 
+              <div class="logo-container-2">
+                  <div class="logo-2">
+                    <a href="index.html" class="clearfix">
+                      <img src="{% static 'images/logo-white.png' %}" class="logo-img" alt="Logo">
+                    </a>
+                  </div>
+                </div>
+             </div>
+            </div>
+
+            <!-- BUTTON --> 
+            <div class="menu-btn-respons-container2">
+              <a id="cd-menu-trigger" href="#"><span class="cd-menu-icon"></span></a>
+            </div>
+          </div> <!-- END header-wrapper -->
+        </header>
+                      
+        <!-- SIDE MENU -->      
+        <nav id="cd-lateral-nav" class="font-poppins">
+          <ul class="cd-navigation">
+            <li class="item-has-children">
+              <a href="#0">Services</a>
+              <ul class="sub-menu">
+                <li><a href="/activity/new">Brand</a></li>
+                <li><a href="#0">Web Apps</a></li>
+                <li><a href="#0">Mobile Apps</a></li>
+              </ul>
+            </li> <!-- item-has-children -->
+
+            <li class="item-has-children">
+              <a href="#0">Products</a>
+              <ul class="sub-menu">
+                <li><a href="#0">Web development</a></li>
+                <li><a href="#0">Web Design</a></li>
+                <li><a href="#0">Branding</a></li>
+                <li><a href="#0">Photography</a></li>
+              </ul>
+            </li> <!-- item-has-children -->
+
+            <li class="item-has-children">
+              <a href="#0">Stockists</a>
+              <ul class="sub-menu">
+                <li><a href="#0">London</a></li>
+                <li><a href="#0">New York</a></li>
+                <li><a href="#0">Milan</a></li>
+                <li><a href="#0">Paris</a></li>
+              </ul>
+            </li> <!-- item-has-children -->
+          </ul> <!-- cd-navigation -->
+
+          <ul class="cd-navigation cd-single-item-wrapper">
+            <li><a href="#0">Login</a></li>
+            <li><a href="#0">Register</a></li>
+            <li><a href="#0">Pricing</a></li>
+            <li><a href="#0">Support</a></li>
+          </ul> <!-- cd-single-item-wrapper -->
+
+          <ul class="cd-navigation cd-single-item-wrapper">
+            <li><a class="current" href="#0">Blog</a></li>
+            <li><a href="#0">FAQ</a></li>
+            <li><a href="#0">Terms &amp; Conditions</a></li>
+            <li><a href="#0">Careers</a></li>
+          </ul> <!-- cd-single-item-wrapper -->
+          
+          <div class="cd-navigation socials text-center">
+            <div class="footer2-soc-a">
+              <a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.behance.net/abcgomel" title="Behance" target="_blank"><i class="fa fa-behance"></i></a>
+              <a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" title="LinkedIn+" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a href="http://themeforest.net/user/abcgomel/portfolio?ref=abcgomel" title="Dribbble" target="_blank"><i class="fa fa-dribbble"></i></a>
+            </div>
+          </div>  <!-- socials -->
+          
+        </nav><!-- END side menu -->
+              <!-- SLIDING CONTENT -->
+        <div class="sliding-content rev_slider_wrapper fullwidthbanner-container" id="rev_slider_280_1_wrapper" style="margin:0px auto;background-color:#fff;padding:0px;margin-top:0px;margin-bottom:0px;"><!-- need for menu -->
+        
+
+        
+        </div> <!-- END sliding-content -->
+          <!-- SCROLL ICON -->
+          <div class="local-scroll-cont font-white">
+            <a href="#about" class="scroll-down smooth-scroll">
+              <div class="icon icon-arrows-down"></div>
+            </a>  
+          </div>
+        <!-- SLIDING CONTENT -->
+        <div class="sliding-content"><!-- need for menu --> 
+	{% block content %}
+	{% endblock content %}
+	
+			</div><!-- End BG -->	
+		</div><!-- End wrap -->	        </div> <!-- END sliding-content -->   
+          
+	<!-- JS begin -->
+
+		<!-- jQuery  -->
+		<script  src="{% static 'js/jquery.min.js' %}"></script>
+
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="{% static 'js/bootstrap.min.js' %}"></script>	
+
+		<!-- MAGNIFIC POPUP -->
+		<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>    
+    
+    	<!-- PORTFOLIO SCRIPTS -->
+    	<script  src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    
+    	<!-- APPEAR -->    
+    	<script  src="{% static 'js/jquery.appear.js' %}"></script>
+    
+
+   		<!--[if lt IE 10]><script  src="js/jquery.placeholder.js"></script><![endif]--> 
+    
+    	<!-- FORMS VALIDATION	-->
+		<script src="{% static 'js/jquery.validate.min.js' %}"></script>
+		<script src="{% static 'js/contact-form-validation.min.js' %}"></script>
+    
+    	<!-- MAIN SCRIPT -->
+		<script src="{% static 'js/main.js' %}"></script>
+
+    <!-- SIDE MENU -->
+    <script src="{% static 'js/side-menu.js' %}"></script>
+    
+	<!-- JS end -->	
+	
+
+	</body>
+</html>

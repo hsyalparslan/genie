@@ -2936,7 +2936,7 @@ img, video {
 =====================================================*/
 .logo-row {
 	position:relative;
-	width:142px;
+	width:247px;
 	z-index:1;
 }
 .header-transporent-bg-black{
@@ -3172,7 +3172,6 @@ img, video {
 .pt-110-cont{ padding-top:110px;}
 .pt-100-cont{ padding-top:100px;}
 .pt-80-b-30-cont { padding-top:80px; padding-bottom:30px;}
-.pt-60-b-0-cont { padding-top:60px; padding-bottom:0px;}
 .pt-80-b-35-cont { padding-top:80px; padding-bottom:35px;}
 .pt-80-b-50-cont { padding-top:80px; padding-bottom:50px;}
 .pt-100-b-80-cont { padding-top:100px; padding-bottom:80px;}
@@ -6041,10 +6040,10 @@ select.input-border {
   padding:9px !important;
 }
 .logo-footer{
-  max-height:60px;
+  max-height:80px;
 }
 .logo-footer-cont{
-  margin-bottom:50px;
+  margin-bottom:30px;
 }
 .footer2-text-cont {
   margin-bottom:24px;
@@ -6799,7 +6798,7 @@ header.affix .logo .logo-img {
 	transition: all .4s ease 0s;
 }
 .header.no-transparent .logo-2 {
-	padding:26px 0 25px 0;
+	padding:11px 0 10px 0;
 }
 
 /* #BREADCRUMB 
@@ -11368,7 +11367,7 @@ h2.portfolio-timeline-title {
 		width:auto;
 	}
 	.header-side-menu .logo-row {
-		width:180px;
+		width:247px;
 	}
 	.cd-header-buttons {
 	  top: 21px;
@@ -13442,7 +13441,7 @@ header.is-fixed {
   bottom: auto;
   width: 24px;
   height: 2px;
-  background-color: #323336;
+  background-color: #fff;
 }
 #cd-menu-trigger .cd-menu-icon::before, #cd-menu-trigger .cd-menu-icon:after {
   content: '';
@@ -13465,7 +13464,7 @@ header.is-fixed {
   transition: all .3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
 }
 #cd-menu-trigger.is-clicked .cd-menu-icon::before, #cd-menu-trigger.is-clicked .cd-menu-icon::after {
-  background-color: #323336;
+  background-color: #fff;
   transition: all .3s cubic-bezier(0.300, 0.100, 0.580, 1.000);
 }
 #cd-menu-trigger.is-clicked .cd-menu-icon::before {

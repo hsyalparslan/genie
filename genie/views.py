@@ -58,3 +58,6 @@ def wish_new(request):
 		wishes = TaskTwoCustomer.objects.all()
 		form = CustomerForm()
 	return render(request, 'genie/wish_new.html', {'form': form, 'wishes': wishes})
+
+def index(request):
+	return render(request, 'genie/index.html')

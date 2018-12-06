@@ -1,6 +1,6 @@
-{% load static %}
-<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-
+{% extends "layout.html" %}
+{% block title %}Task 2{% endblock title %}
+{% block content %}
 <h1>Well done. Your submission was noted.</h1>
 <h3>The wishes of the customers were:</h3>
 <ul>
@@ -21,3 +21,4 @@
 	<p>Customer 3: blah</p>
 </div>
 {% endfor %}
+{% endblock content %}	

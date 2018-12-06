@@ -1,42 +1,7 @@
-<!DOCTYPE html>
-{% load static %}
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- CSS -->
-    	<!--  GOOGLE FONT -->		
-	    <link href="https://fonts.googleapis.com/css?family=Poppins:500,600,300%7COpen+Sans:400,300,700" rel="stylesheet" type="text/css">
-	    
-	    <!--  BOOTSTRAP -->
-			<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"> 
-		
-	    <!-- ICONS ELEGANT FONT & FONT AWESOME & LINEA ICONS  -->		
-			<link rel="stylesheet" href="{% static 'css/icons-fonts.css' %}" >	
-		
-	    <!--  CSS THEME -->		
-			<link rel="stylesheet" href="{% static 'css/style.css' %}" >
-		
-	    <!-- ANIMATE -->	
-			<link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
-			
-	    <!-- IE Warning CSS -->
-			<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie-warning.css" ><![endif]-->
-			<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="css/ie8-fix.css" ><![endif]-->
-	    
-	    <!-- Magnific popup, Owl Carousel Assets in style.css -->		
-		
-	<!-- CSS end -->
-	</head>
-	<body>
-		<!-- LOADER -->	
-		<div id="loader-overflow">
-      		<div id="loader3" class="loader-cont">Please enable JS</div>
-    	</div>	
+{% extends 'layout.html' %}
+{% block title %}Task 2{% endblock title %}
+{% block content %}
 
-		<div id="wrap" class="boxed ">
-			<div class="grey-bg"> <!-- Grey BG  -->	
-
-       
         <!-- PAGE TITLE LARGE 2 GRAY -->
         <div class="page-title-cont page-title-large2-cont bg-gray">
           <div class="relative container align-left">
@@ -121,38 +86,4 @@
 
 
 
-			</div><!-- End BG -->	
-		</div><!-- End wrap -->	
-			
-<!-- JS begin -->
-
-		<!-- jQuery  -->
-		<script  src="{% static 'js/jquery.min.js' %}"></script>
-
-		<!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="{% static 'js/bootstrap.min.js' %}"></script>	
-
-		<!-- MAGNIFIC POPUP -->
-		<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>    
-    
-    <!-- PORTFOLIO SCRIPTS -->
-    <script  src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
-    
-    <!-- APPEAR -->    
-    <script  src="{% static 'js/jquery.appear.js' %}"></script>
-    
-
-    <!--[if lt IE 10]><script  src="js/jquery.placeholder.js"></script><![endif]--> 
-    
-    <!-- FORMS VALIDATION	-->
-		<script src="{% static 'js/jquery.validate.min.js' %}"></script>
-		<script src="{% static 'js/contact-form-validation.min.js' %}"></script>
-    
-    <!-- MAIN SCRIPT -->
-		<script src="{% static 'js/main.js' %}"></script>
-
-<!-- JS end -->	
-	
-
-	</body>
-</html>
+{% endblock content %}	
