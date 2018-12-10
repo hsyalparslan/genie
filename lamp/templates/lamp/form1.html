@@ -1,0 +1,87 @@
+{% extends 'layout.html' %}
+{% block title %}Lamp{% endblock title %}
+{% block content %}
+
+        <!-- PAGE TITLE LARGE 3 IMG -->
+        <div class="page-title-large3-cont bg-gray" style="background-image: url(/static/images/fes77.jpg);">
+          <div class="container relative ">
+         	  <div class="page-title-large3-text-cont">
+  
+         	  	              <div>
+                <h1 class="page-title3 customtitle">Lamp</h1>
+              </div>
+              
+
+
+         	  </div>
+          </div>
+        </div>
+        <div class="page-section p-60-cont">
+        <div class="container">
+        <div class="row">
+
+      		<div class="col-md-12">
+        	<h1>Aladdin and the Magic Lamp</h1>
+        	<p>Once there lived a poor widow and her son, Aladdin. One day, Aladdin’s uncle, Mustafa, came to visit them. He said, “Sister, why don’t you let Aladdin come and work for me?” They agreed, and Mustafa took Aladdin along with him. They walked in the desert and came to a cave. The cave was full of riches and treasures, but Mustafa was afraid to go inside. He wanted Aladdin to go in and get him the treasures instead. “Go inside,” commanded Mustafa, “and find me the jewels. You will also find a lamp. Bring it to me.”</p>
+        	<p>Aladdin went inside and found more riches than he could ever imagine. He found a beautiful ring and wore it on his finger. He also collected as many gems as he could, but before he could come out of the cave, Mustafa said, “Quick! Just hand me all, the jewels and the lamp!” Aladdin refused. Angry at the refusal, his cruel uncle blocked the entrance of the cave and left.</p>
+        	<p>Aladdin sat in the dark and cried. Then he saw the old lamp and decided to light it. While cleaning it, he rubbed the lamp and out came a genie! “Master, I shall grant you three wishes,” he said. Aladdin said, <strong>“I wish you could take me home!”</strong> In seconds, Aladdin was with his mother, counting the gems he had brought from the cave. Aladdin also brought the ring along with him and when he rubbed it, out came another genie! “Master, I shall grant your three wishes!” said the genie. <strong>“I wish you made us rich and happy!”</strong> said Aladdin. And Aladdin and his mother lived happily.</p>
+        	<p>One day, Aladdin saw the sultan’s daughter and fell in love with her. He thought that <strong>I wish I married with sultan’s daughter</strong>. He went to the palace with gems and asked for her hand in marriage. The king agreed to this. After marriage, Aladdin showered the princess with all the riches and gave her a huge palace to live in. When the sultan died, Aladdin ruled the kingdom. He was just, kind hearted and everybody was happy under his rule.</p>
+			</div>
+       	</div>
+  		</div>
+  		</div>
+        <!-- CONTACT INFO & FORM SECTION 1 -->
+        <div id="contact-link" class="page-section p-140-cont-b">
+          <div class="container">
+
+            <div class="row">
+            
+
+              <!-- CONTACT FORM -->
+              <div class="col-md-12">
+                <div class="relative">
+                  <form method="POST">
+                    {% load crispy_forms_tags %}
+
+
+
+                    <div class="row">
+                    
+                      <div class="col-md-12">
+                        <div class="row">
+                    
+						{% csrf_token %}
+						{{ wizard.management_form }}
+						{{ form|crispy }}
+                        
+                        </div>
+                      </div>
+                    
+                      <div class="col-md-12">
+                        
+                        <div class="text-right text-xxs-center">
+                          <input type="submit" value="NEXT" class="button medium rounded gray font-open-sans mt-40" data-loading-text="Loading...">
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+
+					</form>
+                  <div class="alert alert-success hidden animated pulse" id="contactSuccess">
+                    Thanks, your message has been sent to us.
+                  </div>
+                
+                  <div class="alert alert-danger hidden animated shake" id="contactError">
+                    <strong>Error!</strong> There was an error sending your message.
+                  </div>
+                </div>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+
+
+
+{% endblock content %}	

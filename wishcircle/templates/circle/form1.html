@@ -1,0 +1,80 @@
+{% extends 'layout.html' %}
+{% block title %}Circle{% endblock title %}
+{% block content %}
+
+        <!-- PAGE TITLE LARGE 3 IMG -->
+        <div class="page-title-large3-cont bg-gray" style="background-image: url(/static/images/fes99.jpg);">
+          <div class="container relative ">
+         	  <div class="page-title-large3-text-cont">
+  
+         	  	
+
+         	  </div>
+          </div>
+        </div>
+        <div class="page-section p-60-cont">
+        <div class="container">
+        <div class="row">
+
+      		<div class="col-md-12">
+        	<h1>The Wish Circle</h1>
+        	<p>Below are several animals who wish they were another animal. They explain why they wish to become that animal. Can you guess which animal they wish to become?</p>
+			</div>
+       	</div>
+  		</div>
+  		</div>
+        <!-- CONTACT INFO & FORM SECTION 1 -->
+        <div id="contact-link" class="page-section p-140-cont-b">
+          <div class="container">
+
+            <div class="row">
+            
+
+              <!-- CONTACT FORM -->
+              <div class="col-md-12">
+                <div class="relative">
+                  <form method="POST">
+                    {% load crispy_forms_tags %}
+
+
+
+                    <div class="row">
+                    
+                      <div class="col-md-12">
+                        <div class="row">
+                    
+						{% csrf_token %}
+						{{ wizard.management_form }}
+						{{ form|crispy }}
+                        
+                        </div>
+                      </div>
+                    
+                      <div class="col-md-12">
+                        
+                        <div class="text-right text-xxs-center">
+                          <input type="submit" value="NEXT" class="button medium rounded gray font-open-sans mt-40" data-loading-text="Loading...">
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+
+					</form>
+                  <div class="alert alert-success hidden animated pulse" id="contactSuccess">
+                    Thanks, your message has been sent to us.
+                  </div>
+                
+                  <div class="alert alert-danger hidden animated shake" id="contactError">
+                    <strong>Error!</strong> There was an error sending your message.
+                  </div>
+                </div>
+              </div>
+                
+            </div>
+          </div>
+        </div>
+
+
+
+{% endblock content %}	

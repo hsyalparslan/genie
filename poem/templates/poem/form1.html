@@ -1,0 +1,133 @@
+{% extends 'layout.html' %}
+{% block title %}Poem{% endblock title %}
+{% block content %}
+
+        <!-- PAGE TITLE LARGE 3 IMG -->
+        <div class="page-title-large3-cont bg-gray" style="background-image: url(/static/images/fes110.jpg);">
+          <div class="container relative ">
+         	  <div class="page-title-large3-text-cont">
+  
+         	  	              <div>
+                <h1 class="page-title3 customtitle">Poem</h1>
+              </div>
+              
+
+
+         	  </div>
+          </div>
+        </div>
+        <div class="page-section p-60-cont">
+        <div class="container">
+        <div class="row">
+
+      		<div class="col-md-6">
+        	<h1>Desirable</h1>
+        	<p>I wish the sun would shine day long,<br>
+          So I could just store energy,<br>
+          Like composing a rhyme<br>
+          That would be glorious.<br><br>
+
+          I wish the best chorus could be,<br>
+          Automatically singing song for me,<br>
+          All the day, tinkling in ears.<br>
+          Every minute, every second <br><br>
+
+          I wish I could hold an amazing party,<br>
+          For people who could dance during the all night,<br>
+          Madly, passionately, ambitiously.<br>
+          Without thinking any sorrow or grief.<br><br>
+           
+          I wish I could open my heart to that man,<br>
+          Could say the things that in my mind,<br>
+          By knowing he wouldn’t even listen me<br>
+          Although all these things, I wish<br>
+          I could have said my inner feelings, freely.<br>
+          </p>
+          <div class="p-60-cont">
+          <audio controls>
+             <source src="/static/poem.ogg" type="audio/ogg">
+          Your browser does not support the audio element.
+          </audio></div>
+			   </div>
+          <div class="col-md-6">
+            
+            <div class="relative">
+                  <form method="POST">
+                    {% load crispy_forms_tags %}
+
+
+
+                    <div class="row">
+                    
+                      <div class="col-md-12">
+                        <div class="row">
+                    
+            {% csrf_token %}
+            {{ wizard.management_form }}
+            {{ form|crispy }}
+                        
+                        </div>
+                      </div>
+                    
+                      <div class="col-md-12">
+                        
+                        <div class="text-right text-xxs-center">
+                          <input type="submit" value="NEXT" class="button medium rounded gray font-open-sans mt-40" data-loading-text="Loading...">
+                        </div>
+                        
+                      </div>
+                      
+                    </div>
+
+                  </form>
+                  <div class="alert alert-success hidden animated pulse" id="contactSuccess">
+                    Thanks, your message has been sent to us.
+                  </div>
+                
+                  <div class="alert alert-danger hidden animated shake" id="contactError">
+                    <strong>Error!</strong> There was an error sending your message.
+                  </div>
+                </div>
+                <ul class="toggle-view-custom toggle-no-bg">
+                <li>
+                  <h3 class="ui-accordion-header"><span class="link"></span>WHAT DOES MOOD MEAN?</h3>
+                  <div class="panel">
+                    <p>Mood is the temporary state of mind or feeling communicated through the poem.</p>
+                  </div>
+                </li>
+                <li>
+                  <h3 class="ui-accordion-header"><span class="link"></span>WHAT DOES PERSONA MEAN?</h3>
+                  <div class="panel">
+                    <p>The imaginary person this poem belongs to. Note that the author does not have to reveal his or her true personality in a poem.</p>
+                  </div>
+                </li>
+                <li>
+                  <h3 class="ui-accordion-header"><span class="link"></span>WHAT DOES TONE MEAN?</h3>
+                  <div class="panel">
+                    <p>The general character or attitude of a place, piece of writing, situation, etc.</p>
+                  </div>
+                </li>
+              </ul><!-- End Toggles -->
+          </div>
+       	</div>
+  		</div>
+  		</div>
+        <!-- CONTACT INFO & FORM SECTION 1 -->
+        <div id="contact-link" class="page-section p-140-cont">
+          <div class="container">
+
+            <div class="row">
+            
+
+              <!-- CONTACT FORM -->
+              <div class="col-md-12">
+
+              </div>
+                
+            </div>
+          </div>
+        </div>
+
+
+
+{% endblock content %}	

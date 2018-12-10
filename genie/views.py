@@ -35,8 +35,9 @@ class GenieWizard(SessionWizardView):
 		context = super(GenieWizard, self).get_context_data(form=form, **kwargs)
 		wishess = TaskTwoCustomer.objects.all()
 		if self.steps.current == 'GenieForm3':
-			context.update({'wishess': wishess})
+			context.update({'wishess': wishess})		
 		return context
+
 
 	def done(self, form_list, **kwargs):
 		instance = TaskTwoGenie()
@@ -61,3 +62,14 @@ def wish_new(request):
 
 def index(request):
 	return render(request, 'genie/index.html')
+
+def would(request):
+	return render(request, 'genie/would.html')
+
+def reading(request):
+	return render(request, 'genie/reading.html')
+def start(request):
+	return render(request, 'genie/start.html')
+
+def etym(request):
+	return render(request, 'genie/etymology.html')

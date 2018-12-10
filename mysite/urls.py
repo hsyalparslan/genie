@@ -18,6 +18,15 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('blog.urls')),
     path('', include('genie.urls')),
+    path('', include('lamp.urls')),
+    path('', include('wishcircle.urls')),
+    path('', include('poem.urls')),
+    path('', include('guess.urls')),
+    path('', include('fill.urls')),
+    path('', include('checklist.urls')),
 ]
+
+admin.site.site_header = "LMS Admin"
+admin.site.site_title = "Admin"
+admin.site.index_title = "Application Dashboard"

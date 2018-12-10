@@ -3165,6 +3165,8 @@ img, video {
 .p-110-cont{ padding-top:110px; padding-bottom:110px;}
 .p-130-cont{ padding-top:130px !important; padding-bottom:130px !important;}
 .p-140-cont{ padding-top:140px; padding-bottom:140px;}
+.p-140-cont-x{padding-top: 140px; padding-bottom: 140px}
+.p-140-cont-b{padding-bottom: 140px}
 .p-150-cont{ padding-top:150px; padding-bottom:150px;}
 .p-160-cont{ padding-top:160px; padding-bottom:160px;}
 .p-180-cont{ padding-top:180px; padding-bottom:180px;}
@@ -5615,19 +5617,22 @@ pre{
 /* #PAGE TITLE LARGE 2 GRAY #NEW-2
 =====================================================*/
 .page-title2 {
-  margin:100px 0 0 0; 
+  margin:140px 0 0 0; 
   font-size: 36px;
   line-height: 38px;
   font-weight: lighter;
 }
 .breadcrumbs2 {
-  margin-top: 112px;
+  margin-top: 130px;
   text-align:right;
   font-size:12px;
 }
 .page-title-large2-cont {
-  padding-top: 180px;
+  padding-top: 130px;
   padding-bottom: 47px;
+}
+.progress {
+  margin-bottom: 0 !important;
 }
 
 /* #PAGE TITLE LARGE 3 IMG #NEW-2
@@ -14235,3 +14240,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', e
   background:-webkit-radial-gradient(left top , circle cover , rgb(12, 180, 206) 9% , rgb(0, 108, 255) 48% , rgb(100, 66, 255) 91%);
   } */
 
+
+
+
+.customtitle{
+  background-color: rgb(246,231,1, 0.7);
+}
