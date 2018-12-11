@@ -40,7 +40,7 @@ class LampWizard(SessionWizardView):
 			for field, value in form.cleaned_data.items():
 				setattr(instance, field, value)
 		instance.save()
-		return HttpResponseRedirect('/lamp/list/')
+		return HttpResponseRedirect('/start')
 
 
 def index(request):

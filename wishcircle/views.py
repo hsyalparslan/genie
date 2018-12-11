@@ -42,7 +42,7 @@ class CircleWizard(SessionWizardView):
 			for field, value in form.cleaned_data.items():
 				setattr(instance, field, value)
 		instance.save()
-		return HttpResponseRedirect('')
+		return HttpResponseRedirect('/start')
 
 
 def index(request):
